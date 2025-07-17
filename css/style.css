@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'FrogFont';
+  src: url('../fonts/FrogFont.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'FrogFont', sans-serif;
+  background: url('../images/Tomato_back.png') repeat;
+}
+
+/* контейнер для центрирования всего */
+.container {
+  max-width: 1100px; /* сделал шире */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HEADER */
+header {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .container {
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 65px; /* лягушку больше */
+  height: 65px;
+}
+
+.logo span {
+  font-size: 38px; /* текст FrogsHut больше */
+}
+
+nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px; /* меню больше */
+}
+
+/* MAIN */
+main {
+  padding-top: 140px;
+  min-height: 90vh;
+}
+
+/* GAME SECTION */
+.game-section {
+  background: #FDF6E4;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;  /* <--- ЦЕНТРИРУЕТ */
+  align-items: center;
+  gap: 60px;
+  padding: 60px 70px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+.game-left {
+  flex: 1;
+  text-align: center;
+}
+
+.game-icon {
+  width: 320px; /* Лиса больше */
+}
+
+.game-name {
+  margin-top: 20px;
+  width: 320px;
+}
+
+.game-right {
+  flex: 2;
+}
+
+.game-right h2 {
+  font-size: 50px;
+  color: white;
+  -webkit-text-stroke: 0.3px black;
+  font-weight: normal;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black,
+    -1px  0px 0 black,
+     1px  0px 0 black,
+     0px -1px 0 black,
+     0px  1px 0 black;
+  margin: 0 0 25px;
+}
+
+
+
+
+.desc {
+  font-size: 36px;
+  margin: 20px 0 35px;
+}
+
+.game-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.game-right ul li {
+  font-size: 34px;
+  color: #F6B468;
+  -webkit-text-stroke: 0.3px black;
+  font-weight: normal;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black,
+    -1px  0px 0 black,
+     1px  0px 0 black,
+     0px -1px 0 black,
+     0px  1px 0 black;
+  margin-bottom: 12px;
+}
+
+
+.store-buttons {
+  margin-top: 30px;
+}
+
+.store-buttons img {
+  width: 200px;
+  margin-right: 20px;
+  transition: transform 0.2s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;   /* красивый отступ между кнопками */
+}
+
+.store-buttons img {
+  width: 200px;
+  display: block;      /* убирает подстрочные пустоты */
+  line-height: 0;      /* страхуемся от мусора */
+  border: none;
+  outline: none;
+}
+
+footer {
+  background: #fff; /* белая полоса */
+  padding: 40px 0;  /* увеличим вертикальные отступы */
+}
+
+.footer-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* остальное у тебя уже есть */
+
+
+.footer-socials img {
+  width: 36px;
+  margin-right: 12px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.footer-socials img:hover {
+  transform: scale(1.1);
+}
+
+.footer-links a {
+  display: inline-block;
+  background: #FDF6E4;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 26px;
+  color: #333;
+  text-decoration: none;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  margin-right: 15px;
+}
+
+.footer-links a:hover {
+  background: #f0e6c6;
+}
+
+.footer-contacts p,
+.footer-address p {
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+.footer-contacts a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.legal-wrapper {
+  max-width: 960px;
+  margin: 60px auto 60px; /* было 120px — уменьшено */
+  padding: 50px 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: 'AvenirLight', sans-serif;
+}
+
+.legal-title {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 40px;
+}
